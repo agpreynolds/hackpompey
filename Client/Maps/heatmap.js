@@ -4,8 +4,8 @@ function PlotHeatmaps(json, year) {
 
     var heatmapData = [];
 
-    for (var i = 0; i < json.length - 1; i++) {
-        heatmapData[heatmapData.length] = PushNewHeatMapPoint(json[i]);
+    for (var i = 0; i < data.length - 1; i++) {
+        heatmapData[heatmapData.length] = PushNewHeatMapPoint(data[i]);
     }
 
     heatmap = new google.maps.visualization.HeatmapLayer({
@@ -16,9 +16,6 @@ function PlotHeatmaps(json, year) {
 
 }
 
-function PushNewHeatMapPoint(json, year) {
-    return {
-        location: new google.maps.LatLng(json['latitude'], json['longitude']),
-        weight: (json['populations'][year] / 1000000)
-    };
+function PushNewHeatMapPoint(json) {
+    return {location: new google.maps.LatLng(json['Latitude (average)'], json['Longitude (average)'],100) };//json['weight']};
 }

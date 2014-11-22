@@ -1,7 +1,13 @@
 var map;
+var data;
 
 function initialize() {
     SetupMap();
+
+    data = GetCountries()
+
+    ParseCSVs();
+
     PlotHeatmaps();
 }
 
@@ -28,7 +34,8 @@ $(document).foundation({
     }
 });
 
-function getCountries() {
+
+function GetCountries() {
 
     var jsonContents, headingsArray, dataArray, countriesArray = [];
 
