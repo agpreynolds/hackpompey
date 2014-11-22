@@ -1,46 +1,19 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Maps Thing</title>
-<<<<<<< HEAD
-  <style type="text/css">
-    html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
-  </style>
-  <script type="text/javascript"
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsWX6y62_QZKmpYcBc5KK3r_ooxEDHy5g">
-</script>
-<script type="text/javascript">
-  function initialize() {
-    var mapOptions = {
-      center: { lat: -34.397, lng: 150.644},
-      zoom: 8
-    };
-    var map = new google.maps.Map(document.getElementById('map-canvas'),
-      mapOptions);
-  }
-  google.maps.event.addDomListener(window, 'load', initialize);
-</script>
-=======
-    <style type="text/css">
-      html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
-    </style>
-	<script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsWX6y62_QZKmpYcBc5KK3r_ooxEDHy5g">
-    </script>
-    <script type="text/javascript">
-      function initialize() {
-        var mapOptions = {
-          center: { lat: 54.523610, lng: -1.559458},
-          zoom: 6
-        };
-        var map = new google.maps.Map(document.getElementById('map-canvas'),
-            mapOptions);
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
->>>>>>> FETCH_HEAD
+    
+    <title>Maps Thing</title>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsWX6y62_QZKmpYcBc5KK3r_ooxEDHy5g"></script>
+    
+    <script type="text/javascript" src="Client/main.js"></script>
+            
+    <link rel="stylesheet" type="text/css" href="Client/CSS/main.css">
+
 </head>
+
 <body>
-	<div id="map-canvas"></div>
+    <div id="map-canvas"></div>
 </body>
+
 </html>
