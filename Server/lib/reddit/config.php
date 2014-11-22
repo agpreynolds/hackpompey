@@ -5,11 +5,11 @@ class redditConfig{
     static $ENDPOINT_OAUTH = 'https://oauth.reddit.com';
     static $ENDPOINT_OAUTH_AUTHORIZE = 'https://ssl.reddit.com/api/v1/authorize';
     static $ENDPOINT_OAUTH_TOKEN = 'https://ssl.reddit.com/api/v1/access_token';
-    static $ENDPOINT_OAUTH_REDIRECT = 'http://localhost/reddit/test.php';
+    static $ENDPOINT_OAUTH_REDIRECT = 'http://localhost/Server/main.php';
     
     //access token configuration from https://ssl.reddit.com/prefs/apps
-    static $CLIENT_ID = 'YOUR CLIENT ID';
-    static $CLIENT_SECRET = 'YOUR CLIENT SECRET';
+    static $CLIENT_ID = 'hUjd9vv-pIw_oQ';
+    static $CLIENT_SECRET = 'k8WzLXZS2SayNCBKXLwgbZMVw3A';
     
     //access token request scopes
     //full list at http://www.reddit.com/dev/api/oauth
