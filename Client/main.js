@@ -1,5 +1,16 @@
-function initialize() {
+var map;
 
+function initialize() {
+<<<<<<< HEAD
+
+=======
+    SetupMap();
+    PlotHeatmaps();
+}
+
+function SetupMap() {
+
+>>>>>>> origin/master
     var mapOptions = {
         center: {
             lat: 54.523610,
@@ -8,10 +19,11 @@ function initialize() {
         zoom: 6
     };
     
-    var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+    map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
+<<<<<<< HEAD
 
 function getCountries() {
 
@@ -43,3 +55,5 @@ function getCountries() {
     return countriesArray;
 
 }
+=======
+>>>>>>> origin/master
