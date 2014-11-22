@@ -15,7 +15,7 @@ $(function(){
 			$.get('https://www.quandl.com/api/v1/datasets/WORLDBANK/'+ item.code +'_SP_POP_TOTL.csv')
 				.done(function(r){
 					item.data = $.csv.toObjects(r);
-				});			
+				});
 		}
 	})
 })
