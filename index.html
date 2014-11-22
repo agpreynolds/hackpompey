@@ -2,22 +2,42 @@
 <html>
 
 <head>
-    
+
     <title>Maps Thing</title>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="/Client/lib/jquery.csv.min.js"></script>
-    <script type="text/javascript" src="/Client/csvparser.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsWX6y62_QZKmpYcBc5KK3r_ooxEDHy5g&libraries=visualization"></script>
-    
+
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/css/foundation.min.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/js/foundation.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/js/foundation/foundation.slider.min.js"></script>
+
+    <script type="text/javascript" src="Client/lib/jquery.csv.min.js"></script>
+    <script type="text/javascript" src="Client/csvparser.js"></script>
+
+
     <script type="text/javascript" src="Client/main.js"></script>
     <script type="text/javascript" src="Client/maps/heatmap.js"></script>
-            
+
     <link rel="stylesheet" type="text/css" href="Client/CSS/main.css">
 
 </head>
 
 <body>
-    <div id="map-canvas"></div>
+    <header class="top-bar">
+        <div class="range-slider" data-slider data-options="start: 1960; end: 2013;">
+            <span class="range-slider-handle" role="slider" tabindex="0"></span>
+            <span class="range-slider-active-segment"></span>
+            <input type="hidden">
+        </div>
+    </header>
+    <div class="wrapper">
+        <div id="map-canvas"></div>
+    </div>
+
+    <script>
+        $(document).foundation();
+    </script>
+
 </body>
 
 </html>
