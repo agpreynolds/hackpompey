@@ -1,6 +1,9 @@
 var map;
 var data;
 
+var maxPop = 0;
+var year = '2013-12-31';
+
 function initialize() {
     SetupMap();
 
