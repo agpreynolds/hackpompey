@@ -10,7 +10,7 @@ $settings = array(
 );
 
 $url = "https://api.twitter.com/1.1/search/tweets.json";
-$getField = '?q=xfactor&count=5';
+$getField = '?q=ukip';//&geocode=54.523610,-1.559458,2000mi';
 $requestMethod = 'GET';
 
 $twitter = new TwitterAPIExchange($settings);
